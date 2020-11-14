@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='image/favicon/favicon-32x32.png') }}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='image/favicon/favicon-96x96.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='image/favicon/favicon-16x16.png') }}">
+
+  <link rel="shortcut icon" href="{{ url_for('static', filename='image/favicon/favicon.ico') }}"/>
+
+  <title>{{ title }}</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top nav-back">
+    <div class="container">
+      <span class="navbar-brand">
+        <img src="{{ url_for('static', filename='image/logo.png') }}" width="26" height="26" class="mr-2">
+        <strong>vnkrtv</strong>
+     </span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a id="main-link" class="nav-link" href='#top'>About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="projects-link" class="nav-link" href='#projects'>Projects</a>
+          </li>
+          <li class="nav-item">
+            <a id="contacts-link" class="nav-link" href='#contacts'>Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<header class="header" id='top'>
+<div id="carousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="first-slide" src="{{ url_for('static', filename='image/1.jpg') }}" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="second-slide" src="{{ url_for('static', filename='image/2.jpg') }}" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="third-slide" src="{{ url_for('static', filename='image/3.jpg') }}" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="overlay">
+  <div class="carousel-caption text-left">
+    <h1 >Hello, world!</h1>
+    <p>Content comming soon...</p>
+  </div>
+</div>
+</header>
+
+
+ <!-- portfolio -->
+<div class="portfolio" id='projects'>
+     <h1 class="text-center">Projects</h1>
+ <div class="container">
+  <div class="row">
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="images/portfolio/port13.png" class="img-fluid">
+   </div>
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="images/portfolio/port1.png" class="img-fluid">
+   </div>
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="images/portfolio/port6.png" class="img-fluid">
+   </div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="images/portfolio/port3.png" class="img-fluid">
+   </div>
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="images/portfolio/port11.png" class="img-fluid">
+   </div>
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="images/portfolio/electric.png" class="img-fluid">
+   </div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="images/portfolio/Classic.jpg" class="img-fluid">
+   </div>
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="images/portfolio/port1.png" class="img-fluid">
+   </div>
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="images/portfolio/port8.png" class="img-fluid">
+   </div>
+  </div>
+ </div>
+</div>
+
+<div class="contacts" id='contacts'>
+     <h1 class="text-center">Contacts</h1>
+ <div class="container">
+  <div class="container">
+    Something about us
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-5 nav-back">
+    <div class="container">
+      <div class="icon-container text-center">
+        <a href="https://t.me/vnkrtv"><img src="{{ url_for('static', filename='image/icons/tg.svg') }}"></a>
+        <a><img src="{{ url_for('static', filename='image/favicon/favicon-16x16.png') }}"></a>
+        <a href="https://github.com/vnkrtv"><img src="{{ url_for('static', filename='image/icons/github.svg') }}"></a>
+      </div>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <script type="text/javascript">
+    let scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+</body>
+
+</html>
