@@ -176,10 +176,9 @@ class SiteData:
                                 'traffic in capture.pcap.',
             'tags': [
                 'c++14',
-                'cmake',
-                'vk api'
+                'cmake'
             ],
-            'github_name': 'cmd-vk-tracker',
+            'github_name': 'wifi-detect',
         },
         {
             'name': 'tf-net-analizer',
@@ -209,7 +208,7 @@ class SiteData:
             'name': 'my-site',
             'image': lang_dict['Python'],
             'front_description': 'This site.',
-            'back_description': 'Simple single page implemented on Flask.',
+            'back_description': 'Simple single page site implemented on Flask.',
             'tags': [
                 'python',
                 'html5',

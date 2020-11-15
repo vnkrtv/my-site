@@ -124,7 +124,7 @@
                                     </div>
                                     <ul class="list-inline">
                                         <li class="list-inline-item">
-                                            <a href="https://github.com/{{ project.github_name }}"><img src="{{ url_for('static', filename='image/icons/github.svg') }}"></a>
+                                            <a href="https://github.com/vnkrtv/{{ project.github_name }}"><img src="{{ url_for('static', filename='image/icons/github.svg') }}"></a>
                                         </li>
                                         {% if project.ref %}
                                         <li class="list-inline-item">
@@ -149,16 +149,17 @@
      <h1 class="text-center">Contacts</h1>
  <div class="container">
   <div class="container">
-    <p>Very informative information comming soon...</p>
+    <p class="text-center">Very informative information comming soon...<br>
+    Meanwhile let telegram & github links be here :)</p>
+    <div class="icon-container text-center">
+        <a href="https://t.me/vnkrtv"><img src="{{ url_for('static', filename='image/icons/tg.svg') }}"></a>
+        <a href="https://github.com/vnkrtv"><img src="{{ url_for('static', filename='image/icons/github.svg') }}"></a>
+      </div>
   </div>
 
   <!-- Footer -->
   <footer class="py-5 nav-back">
     <div class="container">
-      <div class="icon-container text-center">
-        <a href="https://t.me/vnkrtv"><img src="{{ url_for('static', filename='image/icons/tg.svg') }}"></a>
-        <a href="https://github.com/vnkrtv"><img src="{{ url_for('static', filename='image/icons/github.svg') }}"></a>
-      </div>
     </div>
     <!-- /.container -->
   </footer>
