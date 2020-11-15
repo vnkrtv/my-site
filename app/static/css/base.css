@@ -146,3 +146,8 @@ a.nav-link {
 .description {
     margin-top: 10vh;
 }
+
+
+.icon-container > a {
+    margin: 1vh;
+}
