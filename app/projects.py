@@ -90,7 +90,7 @@ class SiteData:
             'tags': [
                 'python',
                 'html5',
-                'js'
+                'js',
                 'docker',
                 'travis ci',
                 'github actions'
