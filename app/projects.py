@@ -1,9 +1,9 @@
 class SiteData:
 
     carousel_images = [
-        'image/carousel/1.jpg',
-        'image/carousel/2.jpg',
-        'image/carousel/3.jpg'
+        'image/carousel/1.png',
+        'image/carousel/2.png',
+        'image/carousel/3.png'
     ]
 
     lang_dict = {
@@ -189,6 +189,7 @@ class SiteData:
             'tags': [
                 'python',
                 'tensorflow',
+                'sklearn',
                 'jupyter notebook'
             ],
             'github_name': 'tf-net-analizer',
