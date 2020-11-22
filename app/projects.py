@@ -10,6 +10,7 @@ class SiteData:
         'C++': 'image/langs/cpp-logo.png',
         'Python': 'image/langs/python-logo.jpg',
         'Go': 'image/langs/go-logo.png',
+        'PL/pgSQL': 'image/langs/plpgsql.png'
     }
 
     projects = [
@@ -20,6 +21,7 @@ class SiteData:
             'back_description': 'Web app for tracking and searching VK users. ' +
                                 'Implemented on django and dash, data is stored in MongoDB and Neo4j. ',
             'tags': [
+                'web',
                 'python',
                 'html5',
                 'js',
@@ -29,6 +31,7 @@ class SiteData:
                 'mongo',
                 'neo4j',
                 'docker',
+                'docker compose',
                 'travis ci',
                 'github actions',
                 'vk api'
@@ -41,6 +44,7 @@ class SiteData:
             'front_description': 'Students testing tool.',
             'back_description': 'Testing tool implemented on Django. Data storage is implemented in the DBMS MongoDB.',
             'tags': [
+                'web',
                 'python',
                 'html5',
                 'js',
@@ -59,10 +63,12 @@ class SiteData:
             'front_description': 'Simple dashboard for vk news groups.',
             'back_description': 'Simple dashboard implemented on Dash. Provides monitoring VK news groups posts.',
             'tags': [
+                'web',
                 'python',
                 'dash',
                 'postgres',
                 'docker',
+                'docker compose',
                 'travis ci'
             ],
             'github_name': 'vk-news-dashboard',
@@ -74,9 +80,11 @@ class SiteData:
             'front_description': 'Service loading news from vk news groups.',
             'back_description': 'Service providing loading news from list of vk news groups into PostgreSQL DB.',
             'tags': [
+                'microservice',
                 'go',
                 'postgres',
                 'docker',
+                'docker compose',
                 'travis ci'
             ],
             'github_name': 'go-vk-news-loader',
@@ -88,10 +96,12 @@ class SiteData:
             'back_description': 'App for adding and storing translations of various compositions. ' +
                                 'All data stored in PostgreSQL, web app implemented in Django.',
             'tags': [
+                'web',
                 'python',
                 'html5',
                 'js',
                 'docker',
+                'docker compose',
                 'travis ci',
                 'github actions'
             ],
@@ -100,9 +110,10 @@ class SiteData:
         {
             'name': 'go-habr-loader',
             'image': lang_dict['Go'],
-            'front_description': 'Service loading all posts from habr.com.',
-            'back_description': 'Service providing loading all posts from habr.com into PostgreSQL DB.',
+            'front_description': 'Utility loading all posts from habr.com.',
+            'back_description': 'Utility providing loading all posts from habr.com into PostgreSQL DB.',
             'tags': [
+                'utility',
                 'go',
                 'postgres',
                 'docker',
@@ -112,12 +123,26 @@ class SiteData:
             'ref': 'https://www.kaggle.com/leadness/habr-posts/'
         },
         {
+            'name': ' postgres-markov-chain',
+            'image': lang_dict['PL/pgSQL'],
+            'front_description': 'Text generator based on Markov chain.',
+            'back_description': 'Text generator based on Markov chain written on pure PL/pgSQL. Providing text ' +
+                                'processing, training Markov chain and generating text.',
+            'tags': [
+                'utility',
+                'plpgsql',
+                'nlp',
+            ],
+            'github_name': 'postgres-markov-chain',
+        },
+        {
             'name': 'go-wiki-parser',
             'image': lang_dict['Go'],
-            'front_description': 'Service loading all posts from habr.com.',
+            'front_description': 'Utility parsing large xml wiki dump into MongoDB',
             'back_description': 'Utility providing parsing large xml wiki dump into MongoDB. Stored each article as ' +
                                 'dict of subtopic with list of all references for other articles.',
             'tags': [
+                'utility',
                 'go',
                 'travis ci'
             ],
@@ -130,6 +155,7 @@ class SiteData:
             'back_description': 'Web application for working with the subject database of the shop stored in MS SQL ' +
                                 'Server DB.',
             'tags': [
+                'web',
                 'python',
                 'html5',
                 'js',
@@ -146,6 +172,7 @@ class SiteData:
             'back_description': 'Calculates all possible products of vectors in a given matrix with specified ' +
                                 'threshold, preserving the final product chains.',
             'tags': [
+                'utility',
                 'c++14',
                 'libtorch',
                 'qt5',
@@ -162,6 +189,7 @@ class SiteData:
             'back_description': 'Console application providing loading VK users information, getting ' +
                                 'account changes and users relationship.',
             'tags': [
+                'utility',
                 'c++14',
                 'cmake',
                 'vk api'
@@ -175,6 +203,7 @@ class SiteData:
             'back_description': 'Detects wifi routers and all devices, connected to them. Also records all captured ' +
                                 'traffic in capture.pcap.',
             'tags': [
+                'utility',
                 'c++14',
                 'cmake'
             ],
@@ -187,6 +216,7 @@ class SiteData:
             'back_description': 'Notebooks with NN classifying internet traffic from KDD Cup 1999 data. Implemented '
                                 'on TensowFlow.',
             'tags': [
+                'data science',
                 'python',
                 'tensorflow',
                 'sklearn',
@@ -201,6 +231,7 @@ class SiteData:
             'front_description': 'Simple TCP chat with tui.',
             'back_description': 'Simple TCP chat on sockets with text user interface.',
             'tags': [
+                'service',
                 'go'
             ],
             'github_name': 'go-tcp-chat'
@@ -211,6 +242,7 @@ class SiteData:
             'front_description': 'This site.',
             'back_description': 'Simple single page site implemented on Flask.',
             'tags': [
+                'web',
                 'python',
                 'html5',
                 'bootstrap4',
