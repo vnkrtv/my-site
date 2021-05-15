@@ -1,5 +1,17 @@
-.header{
- height: 95vh;
+@media (min-width: 1001px) {
+    .header {
+        height: 95vh;
+        background-size: cover;
+        background: url(../image/background.png) repeat-x fixed;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+        height: 95vh;
+        background-size: cover;
+        background: url(../image/background-mobile.png) fixed;
+    }
 }
 
 .icon-container > img {
@@ -18,7 +30,7 @@
 }
 
 .nav-back {
-    background-color: white/*#adadad*/;
+    background-color: white /*#adadad*/;
     z-index: 64;
 }
 
@@ -39,14 +51,14 @@ a.nav-link {
     color: black;
 }
 
-.overlay{
+.overlay {
     height: 95vh;
     position: absolute;
     min-height: 95vh;
     min-width: 100%;
     left: 0;
     top: 0;
-    background: rgba(244, 244, 244, 0.7);
+    /*background: rgba(244, 244, 244, 0.7);*/
 }
 
 .img-container {
@@ -67,13 +79,14 @@ a.nav-link {
 
 /* Carousel base class */
 .carousel {
-  height:  95vh;
+    height: 95vh;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  top: 30%;
-  bottom: 3rem;
-  z-index: 10;
+    top: 30%;
+    bottom: 3rem;
+    z-index: 10;
 }
 
 .carousel-caption > h1 {
@@ -85,21 +98,18 @@ a.nav-link {
 }
 
 
-
-
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 95vh;
+    height: 95vh;
 }
 
 .carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
 }
-
 
 
 /* RESPONSIVE CSS

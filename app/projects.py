@@ -15,6 +15,61 @@ class SiteData:
 
     projects = [
         {
+            'name': 'web-testing-tool',
+            'image': lang_dict['Python'],
+            'front_description': 'Students testing tool.',
+            'back_description': 'Testing tool implemented on Django. Data storage is implemented in the DBMS MongoDB.',
+            'tags': [
+                'web',
+                'python',
+                'html5',
+                'js',
+                'bootstrap4',
+                'django',
+                'rest api'
+                'mongo',
+                'docker',
+                'travis ci',
+                'github actions'
+            ],
+            'github_name': 'web-testing-tool',
+        },
+        {
+            'name': 'video-tracker',
+            'image': lang_dict['C++'],
+            'front_description': 'Detecting and tracking objects on video with OpenCV usage.',
+            'back_description': 'Application for tracking various objects and estimating their speed in video stream.',
+            'tags': [
+                'c++17',
+                'computer vision',
+                'cmake',
+                'opencv',
+                'dlib',
+                'mobile net ssd',
+                'video detection',
+                'video tracking'
+            ],
+            'github_name': 'video-tracker',
+        },
+        {
+            'name': 'vk-news-dashboard',
+            'image': lang_dict['Python'],
+            'front_description': 'Simple dashboard for vk news groups.',
+            'back_description': 'Simple dashboard implemented on Dash. Provides monitoring VK news groups posts.',
+            'tags': [
+                'web',
+                'python',
+                'dash',
+                'nlp',
+                'postgres',
+                'docker',
+                'docker compose',
+                'travis ci'
+            ],
+            'github_name': 'vk-news-dashboard',
+            'ref': 'http://vknews.vnkrtv.ru/',
+        },
+        {
             'name': 'vk-tracker',
             'image': lang_dict['Python'],
             'front_description': 'Web app for tracking, analyzing and searching people in VK.',
@@ -37,42 +92,6 @@ class SiteData:
                 'vk api'
             ],
             'github_name': 'vk-tracker',
-        },
-        {
-            'name': 'web-testing-tool',
-            'image': lang_dict['Python'],
-            'front_description': 'Students testing tool.',
-            'back_description': 'Testing tool implemented on Django. Data storage is implemented in the DBMS MongoDB.',
-            'tags': [
-                'web',
-                'python',
-                'html5',
-                'js',
-                'bootstrap4',
-                'django',
-                'mongo',
-                'docker',
-                'travis ci',
-                'github actions'
-            ],
-            'github_name': 'web-testing-tool',
-        },
-        {
-            'name': 'vk-news-dashboard',
-            'image': lang_dict['Python'],
-            'front_description': 'Simple dashboard for vk news groups.',
-            'back_description': 'Simple dashboard implemented on Dash. Provides monitoring VK news groups posts.',
-            'tags': [
-                'web',
-                'python',
-                'dash',
-                'postgres',
-                'docker',
-                'docker compose',
-                'travis ci'
-            ],
-            'github_name': 'vk-news-dashboard',
-            'ref': 'http://vknews.vnkrtv.ru/',
         },
         {
             'name': 'go-vk-news-loader',
@@ -123,7 +142,7 @@ class SiteData:
             'ref': 'https://www.kaggle.com/leadness/habr-posts/'
         },
         {
-            'name': ' postgres-markov-chain',
+            'name': 'postgres-markov-chain',
             'image': lang_dict['PL/pgSQL'],
             'front_description': 'Text generator based on Markov chain.',
             'back_description': 'Text generator based on Markov chain written on pure PL/pgSQL. Providing text ' +
