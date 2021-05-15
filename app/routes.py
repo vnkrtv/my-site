@@ -7,7 +7,6 @@ from .projects import SiteData
 def index():
     content = {
         'title': 'vnkrtv',
-        'projects': SiteData.projects,
-        'carousel_images': SiteData.carousel_images
+        'projects': SiteData.projects
     }
     return render_template('index.html', **content)
