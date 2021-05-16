@@ -52,6 +52,24 @@ class SiteData:
             'github_name': 'video-tracker',
         },
         {
+            'name': 'smart-text-editor',
+            'image': lang_dict['Python'],
+            'front_description': 'Text editor with intelligent typing based on relevant search in Elasticsearch.',
+            'back_description': 'Web application for editing text documents with support for intelligent typing ' +
+                                'based on relevant search in Elasticsearch.',
+            'tags': [
+                'web',
+                'python',
+                'flask',
+                'rest api',
+                'elasticsearch',
+                'docker',
+                'travis ci',
+                'github actions'
+            ],
+            'github_name': 'smart-text-editor'
+        },
+        {
             'name': 'vk-news-dashboard',
             'image': lang_dict['Python'],
             'front_description': 'Simple dashboard for vk news groups.',
@@ -107,6 +125,38 @@ class SiteData:
                 'travis ci'
             ],
             'github_name': 'go-vk-news-loader',
+        },
+        {
+            'name': 'telegram-channels-loader',
+            'image': lang_dict['Python'],
+            'front_description': 'Service providing loading messages from telegram channels.',
+            'back_description': 'Service providing loading messages from given telegram channels to PostgreSQL DB.',
+            'tags': [
+                'python',
+                'telegram',
+                'async',
+                'postgres',
+                'docker',
+                'docker compose',
+                'travis ci'
+            ],
+            'github_name': 'telegram-channels-loader',
+        },
+        {
+            'name': 'tiktok-loader',
+            'image': lang_dict['Python'],
+            'front_description': 'Service loading TikTok information.',
+            'back_description': 'Service loading information about russian TikTik popular users. ' +
+                                'Loads to DB latest tiktoks with audios and videos.',
+            'tags': [
+                'python',
+                'tiktok',
+                'postgres',
+                'docker',
+                'docker compose',
+                'travis ci'
+            ],
+            'github_name': 'tiktok-loader',
         },
         {
             'name': 'web-library',
