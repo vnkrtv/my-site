@@ -196,11 +196,10 @@
                 });
             vkBridge
                 .send('VKWebAppGetUserInfo')
-                .then((e) => {
+                .then((data) => {
                     console.log('VKWebAppGetUserInfo: ');
-                    console.log(e);
                     const title = document.getElementById('mainTitle');
-                    title.innerHTML = `Hello, ${e.data.first_name} ${e.data.second_name} from ${e.data.city.title}!`;
+                    title.innerHTML = `Hello, ${data.first_name} ${data.second_name} from ${data.city.title}!`;
                 })
                 .catch((error) => {
                     console.log('Error on VKWebAppGetUserInfo: ' + error.toString());
