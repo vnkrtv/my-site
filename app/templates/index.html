@@ -186,16 +186,24 @@
                 speed: 300,
                 speedAsDuration: true
             });
-            vkBridge.subscribe((e) => {
-                console.log(e);
-                if (e.type === "VKWebAppGetUserInfo") {
+            vkBridge
+                .send('VKWebAppInit')
+                .then((e) => {
+                    console.log(e);
+                })
+                .catch((error) => {
+                    console.log('Error on VKWebAppInit: ' + error.toString());
+                });
+            vkBridge
+                .send('VKWebAppGetUserInfo')
+                .then((e) => {
                     console.log(e.data.status);
                     const title = document.getElementById('mainTitle');
                     title.innerHTML = `Hello, ${e.data.first_name} ${e.data.second_name} from ${e.data.city.title}!`;
-                }
-            });
-            vkBridge.send("VKWebAppInit", {});
-            vkBridge.send("VKWebAppGetUserInfo", {}).then();
+                })
+                .catch((error) => {
+                    console.log('Error on VKWebAppGetUserInfo: ' + error.toString());
+                });
         </script>
     </div>
 </div>
