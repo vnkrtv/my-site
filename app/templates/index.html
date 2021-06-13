@@ -197,7 +197,8 @@
             vkBridge
                 .send('VKWebAppGetUserInfo')
                 .then((e) => {
-                    console.log('VKWebAppGetUserInfo: ', e.data.status);
+                    console.log('VKWebAppGetUserInfo: ');
+                    console.log(e);
                     const title = document.getElementById('mainTitle');
                     title.innerHTML = `Hello, ${e.data.first_name} ${e.data.second_name} from ${e.data.city.title}!`;
                 })
