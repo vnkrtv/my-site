@@ -1,0 +1,7 @@
+{
+  "name": "card-site",
+  "version": "1.0.0",
+  "dependencies": {
+    "@vkontakte/vk-bridge": "^2.4.2"
+  }
+}
