@@ -1,11 +1,5 @@
 class SiteData:
 
-    carousel_images = [
-        'image/carousel/1.png',
-        'image/carousel/2.png',
-        'image/carousel/3.png'
-    ]
-
     lang_dict = {
         'C++': 'image/langs/cpp-logo.png',
         'Python': 'image/langs/python-logo.jpg',
@@ -42,6 +36,7 @@ class SiteData:
             'tags': [
                 'c++17',
                 'computer vision',
+                'ml',
                 'cmake',
                 'opencv',
                 'dlib',
@@ -132,6 +127,7 @@ class SiteData:
             'front_description': 'Service providing loading messages from telegram channels.',
             'back_description': 'Service providing loading messages from given telegram channels to PostgreSQL DB.',
             'tags': [
+                'microservice',
                 'python',
                 'telegram',
                 'async',
@@ -149,6 +145,7 @@ class SiteData:
             'back_description': 'Service loading information about russian TikTik popular users. ' +
                                 'Loads to DB latest tiktoks with audios and videos.',
             'tags': [
+                'microservice',
                 'python',
                 'tiktok',
                 'postgres',
@@ -199,6 +196,7 @@ class SiteData:
                                 'processing, training Markov chain and generating text.',
             'tags': [
                 'utility',
+                'postgres',
                 'plpgsql',
                 'nlp',
             ],
@@ -286,6 +284,7 @@ class SiteData:
                                 'on TensowFlow.',
             'tags': [
                 'data science',
+                'ml',
                 'python',
                 'tensorflow',
                 'sklearn',
