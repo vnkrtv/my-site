@@ -180,11 +180,20 @@
             <!-- /.container -->
         </footer>
 
-        <script type="text/javascript" src="{{ url_for('static', filename='js/vk.js') }}"></script>
+        <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
         <script type="text/javascript">
             let scroll = new SmoothScroll('a[href*="#"]', {
                 speed: 300,
                 speedAsDuration: true
+            });
+            vkBridge.send("VKWebAppInit", {});
+            vkBridge.send("VKWebAppGetUserInfo", {});
+            vkBridge.subscribe((e) => {
+                if (e.type === "VKWebAppGetUserInfo") {
+                    console.log(e.data.status);
+                    const title = document.getElementById('mainTitle');
+                    title.innerHTML = `Hello, ${e.data.first_name} ${e.data.second_name} from ${e.data.city.title}!`;
+                }
             });
         </script>
     </div>
