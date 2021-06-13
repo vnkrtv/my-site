@@ -189,7 +189,7 @@
             vkBridge
                 .send('VKWebAppInit')
                 .then((e) => {
-                    console.log(e);
+                    console.log('VKWebAppInit: ', e);
                 })
                 .catch((error) => {
                     console.log('Error on VKWebAppInit: ' + error.toString());
@@ -197,7 +197,7 @@
             vkBridge
                 .send('VKWebAppGetUserInfo')
                 .then((e) => {
-                    console.log(e.data.status);
+                    console.log('VKWebAppGetUserInfo: ', e.data.status);
                     const title = document.getElementById('mainTitle');
                     title.innerHTML = `Hello, ${e.data.first_name} ${e.data.second_name} from ${e.data.city.title}!`;
                 })
